@@ -1,5 +1,7 @@
-<h1>{{title}}</h1>
+<h1>
+    App Root
+</h1>
 
-<input type="text" name="text">
-
-<button (click)="callFunc()">Click</button>
+<button (click)="increaseCounter()">Increase Counter</button>
+<hr>
+<app-counter [counter]="count"></app-counter>

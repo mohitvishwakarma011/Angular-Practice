@@ -17,4 +17,8 @@ export class App {
       console.log(this.title);
     },1000)
   }
+
+  increaseCounter():void{
+    this.count++;
+  }
 }
