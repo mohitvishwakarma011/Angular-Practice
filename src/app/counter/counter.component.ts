@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, computed, input } from "@angular/core";
 
 @Component({
     selector:'app-counter',
@@ -7,7 +7,8 @@ import { Component, Input } from "@angular/core";
 })
 
 export class CounterComponent{
+   counter = input.required();
 
-    @Input()counter = 0;
+   signalLabel = computed(()=> `The counter value is ${this.counter()}`)
 
 }
